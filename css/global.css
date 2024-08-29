@@ -1,0 +1,49 @@
+:root {
+    --fw--rg: 400;
+    --fw--md: 500;
+    --fw--bd: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    background: #f2f2f2;
+}
+
+.subtitle {
+    font-size: 8rem;
+    line-height: 1;
+    word-break: break-all;
+    text-transform: uppercase;
+    max-width: 4ch;
+}
+
+@media (max-width: 720px) {
+    .Experiencia .subtitle {
+        font-size: 3rem;
+        text-transform: capitalize;
+        text-align: center;
+        max-width: initial;
+    }
+}

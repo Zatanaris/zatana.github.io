@@ -1,0 +1,56 @@
+.intro {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.intro--title {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.intro--title::before {
+    content: "";
+    display: block;
+    background-image: url("/img/Deco.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .intro--title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .intro {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .intro--title::before {
+        width: 30px;
+        height: 10px;
+        left: 0;
+        top: -10px;
+    }
+}
